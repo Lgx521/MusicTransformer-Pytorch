@@ -92,12 +92,13 @@ def graph_results(input_dirs="./saved_models/results", output_dir=None, model_na
         plt.title("Loss Results")
         plt.ylabel('Loss (Cross Entropy)')
         plt.xlabel('Epochs')
+        plt.grid(alpha=0.4)
         fig1 = plt.gcf()
 
     plt.legend(loc="upper left")
 
     if(output_dir is not None):
-        fig1.savefig(os.path.join(output_dir, 'loss_graph.png'))
+        fig1.savefig(os.path.join(output_dir, 'loss_graph.png'),dpi=320)
 
     plt.show()
 
@@ -113,12 +114,13 @@ def graph_results(input_dirs="./saved_models/results", output_dir=None, model_na
         plt.title("Accuracy Results")
         plt.ylabel('Accuracy')
         plt.xlabel('Epochs')
+        plt.grid(alpha=0.4)
         fig2 = plt.gcf()
 
     plt.legend(loc="upper left")
 
     if(output_dir is not None):
-        fig2.savefig(os.path.join(output_dir, 'accuracy_graph.png'))
+        fig2.savefig(os.path.join(output_dir, 'accuracy_graph.png'),dpi=320)
 
     plt.show()
 
@@ -134,12 +136,13 @@ def graph_results(input_dirs="./saved_models/results", output_dir=None, model_na
         plt.title("Learn Rate Results")
         plt.ylabel('Learn Rate')
         plt.xlabel('Epochs')
+        plt.grid(alpha=0.4)
         fig2 = plt.gcf()
 
     plt.legend(loc="upper left")
 
     if(output_dir is not None):
-        fig2.savefig(os.path.join(output_dir, 'lr_graph.png'))
+        fig2.savefig(os.path.join(output_dir, 'lr_graph.png'),dpi=320)
 
     plt.show()
 
@@ -221,12 +224,13 @@ def graph_results_legacy(input_dirs="./saved_models/results", output_dir=None, m
         plt.title("Loss Results")
         plt.ylabel('Loss (Cross Entropy)')
         plt.xlabel('Epochs')
+        plt.grid(alpha=0.4)
         fig1 = plt.gcf()
 
     plt.legend(loc="upper left")
 
     if(output_dir is not None):
-        fig1.savefig(os.path.join(output_dir, 'loss_graph.png'))
+        fig1.savefig(os.path.join(output_dir, 'loss_graph.png'),dpi=320)
 
     plt.show()
 
@@ -241,12 +245,13 @@ def graph_results_legacy(input_dirs="./saved_models/results", output_dir=None, m
         plt.title("Accuracy Results")
         plt.ylabel('Accuracy')
         plt.xlabel('Epochs')
+        plt.grid(alpha=0.4)
         fig2 = plt.gcf()
 
     plt.legend(loc="upper left")
 
     if(output_dir is not None):
-        fig2.savefig(os.path.join(output_dir, 'accuracy_graph.png'))
+        fig2.savefig(os.path.join(output_dir, 'accuracy_graph.png'),dpi=320)
 
     plt.show()
 
